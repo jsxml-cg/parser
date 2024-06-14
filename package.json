@@ -1,0 +1,26 @@
+{
+  "name": "@jsxml/parser",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cp:types": "cp types.d.ts dist",
+    "cp:package": "cp package.json dist",
+    "build": "tsc -p tsconfig.json && npm run cp:types && npm run cp:package"
+  },
+  "keywords": [],
+  "author": "Guilherme Siquinelli",
+  "repository": {
+    "url": "https://github.com/jsxml-cg/parser",
+    "type": "git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js",
+    "./types": "./types.d.ts"
+  }
+}
